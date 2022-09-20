@@ -1,0 +1,31 @@
+{
+  "code": 20000,
+  "message": "成功",
+  "data": {
+    "id": "10",
+    "userId": "1",
+    "nickName": "@cname",
+    "userImage|1": [
+      null, 
+      "https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"
+    ],
+    "title": "@csentence", // 标题
+    "summary": "@csentence(50, 100)",
+    "viewCount": "@integer(0,100)",
+    "thumhup": "@integer(0,10)",
+    "createDate": "@datetime",
+    "updateDate": "@datetime", // 详情显示的时间
+    "ispublic|1": [0, 1], // 0: 不公开 1：公开
+    "labelIds|1-5": ['@integer(10, 24)'], //随机产生1到5个元素的数字数组，数字取值10到24间
+    "labelList|3": [{ // 所属标签集合
+      "id|+1": 10,
+      "name": "@word" // 标签名
+    }],
+    "imageUrl|1": [
+        null, 
+        "https://img.alicdn.com/bao/uploaded/i2/3603079088/O1CN01rGCkfb2H0M1O7Lj45_!!0-item_pic.jpg"
+    ],
+    "mdContent": "# 第二章 初始化项目\n![image20200509092757510.png](https://mengxuegu.oss-cn-shenzhen.aliyuncs.com/article/20200729/4882eecb1bb44802b2752e74eef0e7a9.png)\n## 重命名项目\n\n1. 将目录名 `vue-admin-template-master` 重命名为 `mengxuegu-blog-admin` \n\n2. 将  `mengxuegu-blog-admin/package.json` 中的 `name` 值改为 `mengxuegu-blog-admin` 1\n\n```json\n{\n     \"name\": \"mengxuegu-blog-admin\",\n     \"version\": \"1.0.1\",\n     \"description\": \"mengxuegu blog\",\n     \"author\": \"mengxuegu.com\",\n     // ...\n}\n```\n\n3. 将  `mengxuegu-blog-admin/package-lock.jsom` 中的 `name` 值改为 `mengxuegu-blog-admin`  2\n\n```json\n{\n  \"name\": \"mengxuegu-blog-admin\",\n  \"version\": \"1.0.1\",\n  \"lockfileVersion\": 1,\n}\n```\n\n## Eslint 语法规范检查\n\nESLint 是一个用来按照规则给出报告的代码检测工具，使用它可以避免低级错误和统一代码的风格，也保证了代码的可读性。\n\n### 取消 ESLint 校验\n\n在工程根目录下的 `vue.config.js` 中将 lintOnSave 指定为 false 即可。\n\n```js\nlintOnSave: false, // process.env.NODE_ENV === 'development',\n```\n",
+    "htmlContent": "<h1><a id=\"__0\"></a>第二章 初始化项目</h1>\n<p><img src=\"https://mengxuegu.oss-cn-shenzhen.aliyuncs.com/article/20200729/4882eecb1bb44802b2752e74eef0e7a9.png\" alt=\"image20200509092757510.png\" /></p>\n<h2><a id=\"_2\"></a>重命名项目</h2>\n<ol>\n<li>\n<p>将目录名 <code>vue-admin-template-master</code> 重命名为 <code>mengxuegu-blog-admin</code></p>\n</li>\n<li>\n<p>将  <code>mengxuegu-blog-admin/package.json</code> 中的 <code>name</code> 值改为 <code>mengxuegu-blog-admin</code> 1</p>\n</li>\n</ol>\n<pre><div class=\"hljs\"><code class=\"lang-json\">{\n     <span class=\"hljs-attr\">\"name\"</span>: <span class=\"hljs-string\">\"mengxuegu-blog-admin\"</span>,\n     <span class=\"hljs-attr\">\"version\"</span>: <span class=\"hljs-string\">\"1.0.1\"</span>,\n     <span class=\"hljs-attr\">\"description\"</span>: <span class=\"hljs-string\">\"mengxuegu blog\"</span>,\n     <span class=\"hljs-attr\">\"author\"</span>: <span class=\"hljs-string\">\"mengxuegu.com\"</span>,\n     // ...\n}\n</code></div></pre>\n<ol start=\"3\">\n<li>将  <code>mengxuegu-blog-admin/package-lock.jsom</code> 中的 <code>name</code> 值改为 <code>mengxuegu-blog-admin</code>  2</li>\n</ol>\n<pre><div class=\"hljs\"><code class=\"lang-json\">{\n  <span class=\"hljs-attr\">\"name\"</span>: <span class=\"hljs-string\">\"mengxuegu-blog-admin\"</span>,\n  <span class=\"hljs-attr\">\"version\"</span>: <span class=\"hljs-string\">\"1.0.1\"</span>,\n  <span class=\"hljs-attr\">\"lockfileVersion\"</span>: <span class=\"hljs-number\">1</span>,\n}\n</code></div></pre>\n<h2><a id=\"Eslint__28\"></a>Eslint 语法规范检查</h2>\n<p>ESLint 是一个用来按照规则给出报告的代码检测工具，使用它可以避免低级错误和统一代码的风格，也保证了代码的可读性。</p>\n<h3><a id=\"_ESLint__32\"></a>取消 ESLint 校验</h3>\n<p>在工程根目录下的 <code>vue.config.js</code> 中将 lintOnSave 指定为 false 即可。</p>\n<pre><div class=\"hljs\"><code class=\"lang-js\">lintOnSave: <span class=\"hljs-literal\">false</span>, <span class=\"hljs-comment\">// process.env.NODE_ENV === 'development',</span>\n</code></div></pre>\n"
+  }
+}

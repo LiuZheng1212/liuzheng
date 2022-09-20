@@ -1,0 +1,11 @@
+{
+  'memberList|4': [{
+    'id|+1': 1, // Number, 自增 1
+    'name|1-3': '小梦', // String, 随机生成 1到3个重复`小梦`
+    'phone|11': '8', // String, 生成 11 个 8
+    'age|1-120': 1, // Number, 随机生成 1到120 
+    'salary|6000-8000.1-3': 0, // Number, 随机生成6000到8000, 有随机小数1到3位
+    'status|1': true, // Boolean, 生成 true 或 false 概率都是 1/2
+    'open|2-4': true, // Boolean, 生成 true 概率 2/(2+4), false 概率 4/(2+4)
+  }]
+}

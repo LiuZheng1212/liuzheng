@@ -1,0 +1,18 @@
+{
+  "code": 20000,
+  "message": "查询成功",
+  "data": {
+    "total": "@integer(50, 80)", // 总记录数
+    "records|10": [{ //生成10条数据
+      "id|+1": 10, //初始值10开始，每条+1
+      "userId|+1": 1, // 发布者id
+      "nickName": "@cname", // 发布者昵称
+      "title": "@csentence", // 标题
+      "summary": "@csentence(50, 100)",
+      "imageUrl|+1": [null, "https://img.alicdn.com/bao/uploaded/i2/3603079088/O1CN01rGCkfb2H0M1O7Lj45_!!0-item_pic.jpg"],
+      "viewCount": "@integer(0, 100000)", // 浏览次数
+      "thumhup": "@integer(0, 100000)", // 点赞数
+      "updateDate": "@datetime"
+    }]
+  }
+}

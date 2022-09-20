@@ -1,0 +1,7 @@
+{
+  "code": 20000,
+  "message": "查询成功",
+  "data": {
+    "isBuy|+1": true //是否购买, 1次true,一次false
+  }
+}

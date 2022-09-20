@@ -1,0 +1,12 @@
+{
+  "code": 20000,
+  "message": "查询成功",
+  "data|3": [{ // 产生8条数据
+    "id|+1": 10, //初始值10开始，每条+1, 
+    "title": "@ctitle", // 随机一个标题
+    // 图片，按顺序取一个元素（权重一样）
+    "imageUrl|+1": ['/static/images/banner2.jpg', '/static/images/banner1.jpg', '/static/images/banner3.jpg'],
+    "background|+1": ['#006C00', '#45328c', '#0072B7'], //背景色
+    "advertUrl": "/pages/course/course-details?id=10", // 点击跳转链接
+  }]
+}

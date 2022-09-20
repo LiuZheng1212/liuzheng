@@ -1,0 +1,22 @@
+{
+  "code": 20000,
+  "message": "查询成功",
+  "data": {
+    "total": "@integer(30, 50)", // 总记录数
+    "records|10": [{ //每次产生10条
+      "id|+1": 10, //初始值10开始，每条+1
+      "userId": "@integer(10, 30)",
+      "nickName|1": ["@cname", '梦老师'],
+      "userImage": "@image",
+      "title": "@csentence", // 标题
+      "totalTime": "@time", //总时长
+      "studyTotal": "@integer(100, 700)", // 在学人数
+      "commTotal": "@integer(100, 600)", // 好评数
+      // 主图
+      "mainImage|1": ['/static/images/banner2.jpg', '/static/images/banner1.jpg', '/static/images/banner3.jpg', 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg'],
+      "isFree|1": [0, 1], //是否免费：0收费，1免费
+      "priceOriginal|501-800.2": 1, //原价, 501到800之间随机数，小数点2位
+      "priceDiscount|60-500.2": 1 //优惠价
+    }]
+  }
+}

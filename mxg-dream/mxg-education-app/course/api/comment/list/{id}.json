@@ -1,0 +1,25 @@
+{
+  "code": 20000,
+  "message": "查询成功",
+  "data|3-10": [{
+    "id|+1": 1,
+    "parentId": "-1",
+    "userId|+1": 1, // 评论者id
+    "nickName": "@cname",
+    "userImage|1": [null, "https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"],
+    "isGood|1": [1, 0], // 1好评，0差评
+    "content": "@csentence", // 评论内容
+    "createDate": "@datetime",
+    "children|1": [
+      null,
+      { // 老师回复
+        "id": 19,
+        "userId": 1, // 回复者id
+        "nickName": "@cname", // 回复者昵称 
+        "userImage": null,
+        "content|1": ["@csentence", "感谢你一直以来的支持！梦学谷-陪你学习，伴你梦想！"],
+        "createDate": "@datetime",
+      }
+    ]
+  }]
+}
