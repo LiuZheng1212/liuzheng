@@ -1,0 +1,153 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarBackgroundColor": "#345DC2",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"type": "transparent",
+						"searchInput": {
+							"align": "center",
+							"placeholder": "搜索你想要的内容",
+							"borderRadius": "30rpx",
+							"backgroundColor": "#F0F1F2",
+							"placeholderColor": "#979C9D",
+							"disabled": true
+						}
+					}
+				}
+			}
+		}, {
+			"path": "pages/category/category",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#345DC2",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"buttons": [{
+							"float": "right",
+							"fontSize": "18",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"text": "\ue608"
+						}]
+					}
+				}
+			}
+
+		}, {
+			"path": "pages/article/article",
+			"style": {
+				"navigationBarBackgroundColor": "#345DC2",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"type": "transparent",
+						"searchInput": {
+							"align": "center",
+							"placeholder": "搜索你想要的内容",
+							"borderRadius": "30rpx",
+							"backgroundColor": "#F0F1F2",
+							"placeholderColor": "#979C9D",
+							"disabled": true
+						}
+					}
+				}
+			}
+
+		}, {
+			"path": "pages/question/question",
+			"style": {
+				"navigationBarBackgroundColor": "#345DC2",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"type": "transparent",
+						"searchInput": {
+							"align": "center",
+							"placeholder": "搜索你想要的内容",
+							"borderRadius": "30rpx",
+							"backgroundColor": "#F0F1F2",
+							"placeholderColor": "#979C9D",
+							"disabled": true
+						}
+					}
+				}
+			}
+
+		}, {
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarBackgroundColor": "#345DC2",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#eee",
+		"backgroundColor": "#F8F8F8"
+		// "navigationStyle": "custom"
+	},
+	"easycom": {
+		"autoscan": true
+	},
+	"tabBar": {
+		"color": "#333",
+		"selectedColor": "#330d01",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"height": "120rpx",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/static/tab/index.png",
+				"selectedIconPath": "static/static/tab/index-active.png"
+			},
+			{
+				"pagePath": "pages/category/category",
+				"text": "分类",
+				"iconPath": "static/static/tab/category.png",
+				"selectedIconPath": "static/tab/category-active.png"
+			},
+			{
+				"pagePath": "pages/article/article",
+				"text": "阅读",
+				"iconPath": "static/static/tab/article.png",
+				"selectedIconPath": "static/static/tab/article-active.png"
+			},
+			{
+				"pagePath": "pages/question/question",
+				"text": "问答",
+				"iconPath": "static/tab/question.png",
+				"selectedIconPath": "static/tab/question-active.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/tab/my.png",
+				"selectedIconPath": "static/tab/my-active.png"
+			}
+		]
+	}
+}
