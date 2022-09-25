@@ -1,0 +1,19 @@
+{
+  "code": 20000,
+  "message": "查询成功",
+  "data|8-30": [{ // 章
+    "id": 10,
+    "name": '@ctitle', // 7到15个字
+    "sectionList|3-18": [ //课节信息
+      {
+        "id|+1": 1,
+        "name": '@ctitle(7, 15)', // 7到15个字
+        "isFree|1": [0, 1], // 是否付费（0付费，1免费）
+        "videoUrl|+1": [
+          'http://admin.mengxuegu.com/video/hls/git.m3u8',
+          'http://baobab.kaiyanapp.com/api/v1/playUrl?vid=164016&resourceType=video&editionType=low&source=aliyun&playUrlType=url_oss'
+        ]
+      }
+    ]
+  }]
+}

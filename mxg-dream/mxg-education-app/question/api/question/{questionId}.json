@@ -1,0 +1,25 @@
+{
+  "code": 20000,
+  "message": "成功",
+  "data": {
+    "id": "10",
+    "userId": "1",
+    "nickName": "@cname",
+    "userImage": "https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif",
+    "title": "@csentence", // 标题
+    "viewCount": "@integer(0,100)",
+    "reply": "@integer(0,3)",
+    "star|1": [0, 1], // 0 未关注，1已关注  
+    "status|1": [1, 2], //1：未解决，2：已解决
+    "createDate": "@datetime",
+    "updateDate": "@datetime", // 详情显示的时间
+    "labelIds|1-5": ['@integer(10, 24)'], //随机产生1到5个元素的数字数组，数字取值10到24间
+    "labelList|3": [{ // 所属标签集合
+      "id|+1": 10,
+      "name": "@word" // 标签名
+    }],
+    "mdContent": '参考官网配置：[https://cli.vuejs.org/zh/guid...](https://cli.vuejs.org/zh/guide/html-and-static-assets.html#public-文件夹)需要设置`BASE_URL````jsdata () {  return {    publicPath: process.env.BASE_URL  }}```然后```html<img :src="`${publicPath}my-image.png`">```',
+
+    "htmlContent": '<p>参考官网配置：<br /><a href="https://cli.vuejs.org/zh/guide/html-and-static-assets.html#public-%E6%96%87%E4%BB%B6%E5%A4%B9" target="_blank">https://cli.vuejs.org/zh/guid…</a></p><p>需要设置<code>BASE_URL</code></p><pre><div class="hljs"><code class="lang-js">data () {  <span class="hljs-keyword">return</span> {    <span class="hljs-attr">publicPath</span>: process.env.BASE_URL  }}</code></div></pre><p>然后</p><pre><div class="hljs"><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">:src</span>=<span class="hljs-string">"`${publicPath}my-image.png`"</span>&gt;</span></code></div></pre>'
+  }
+}

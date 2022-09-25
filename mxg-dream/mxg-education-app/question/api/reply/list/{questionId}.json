@@ -1,0 +1,18 @@
+{
+  "code": 20000,
+  "message": "成功",
+  "data|2-5": [{
+    "id|+1": 1,
+    "parentId": "-1", //父评论id
+    "userId|+1": 1, // 评论者id
+    "nickName": "@cname",
+    "userImage|1": [
+      null,
+      "https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"
+    ],
+    "questionId": "10",
+    "mdContent|+1": ['@csentence', '改成相对路径试试```shpublicPath:"./"```'],
+    "htmlContent|+1": ['@csentence', '<p>改成相对路径试试</p><pre><div class="hljs"><code class="lang-sh">publicPath:<span class="hljs-string">"./"</span></code></div></pre>'],
+    "createDate": "@datetime"
+  }]
+}

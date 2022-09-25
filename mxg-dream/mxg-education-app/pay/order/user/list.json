@@ -1,0 +1,28 @@
+{
+  "code": 20000,
+  "message": "查询成功",
+  "data|2-3": [{ // 1到3个套餐
+    "id|+1": 1, //初始值1开始，每条+1
+    "orderId": /\d{15}/, // 订单id
+    "userId": 199, // 用户id
+    "pricePayable|301-800.2": 1, //应付价格
+    "priceDiscount|200-500.2": 1, //优惠价格
+    "status|+1": [1, 2, 3], // 订单状态：1待支付，2交易成功，3交易关闭
+    "updateDate": "@datetime", // 修改时间
+    "createDate": "@datetime", // 创建时间
+    "courseList|1-3": [{
+      "id|+1": 10, //初始值10开始，每条+1
+      "userId": "@integer(10, 30)", // 讲师id
+      "nickName|1": ["@cname", '梦老师'],
+      "userImage": "@image",
+      "title": "@csentence", // 标题
+      "totalTime": "@time", //总时长
+      "studyTotal": "@integer(100, 700)", // 在学人数
+      "commTotal": "@integer(100, 600)", // 好评数
+      "mainImage|1": ['/static/images/banner2.jpg', '/static/images/banner1.jpg', 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg'],
+      "isFree": 0, //是否免费：0收费，1免费
+      "priceOriginal|501-800.2": 1, //原价, 501到800之间随机数，小数点2位
+      "priceDiscount|60-500.2": 1 //优惠价
+    }]
+  }]
+}

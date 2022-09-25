@@ -1,0 +1,20 @@
+{
+  "code": 20000,
+  "message": "查询成功",
+  "data": {
+    "total": "@integer(50, 60)", // 总记录数
+    "records|10": [{
+      "id|+1": 10, //初始值10开始，每条+1
+      "userId": "@integer(10, 30)",
+      "nickName": "@cname",
+      "userImage": "@image",
+      "title": "@csentence", // 标题
+      "viewCount": "@integer(5, 300)", // 浏览数
+      "thumhup": "@integer(2, 20)", // 点赞数
+      "reply": "@integer(2, 20)", // 回复数
+      "status": 1, //  1：未解决，2：已解决
+      "createDate": "@datetime",
+      "updateDate": "@datetime"
+    }]
+  }
+}

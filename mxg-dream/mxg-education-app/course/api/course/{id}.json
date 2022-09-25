@@ -1,0 +1,21 @@
+{
+  "code": 20000,
+  "message": "查询成功",
+  "data": {
+    "id": 10,
+    "userId": "@integer(10, 30)",
+    "nickName|1": "@cname",
+    "userImage": "@image",
+    "title": "@csentence", // 标题
+    "totalTime": "@time", //总时长
+    "studyTotal": "@integer(100, 700)", // 在学人数
+    "goodRate|1": ["100%", "99%"], //好评率
+    "mainImage": "https://gd4.alicdn.com/imgextra/i4/3603079088/O1CN01dczOSM2H0LvTowhkl_!!3603079088.png",
+    "isFree": 0, // 0 付费，1免费
+    "priceOriginal|501-800.2": 1, //原价, 501到800之间随机数，小数点2位
+    "priceDiscount|60-500.2": 1, //优惠价
+    "detailUrls": [ //课程详情图
+      'https://img.alicdn.com/imgextra/i2/3603079088/O1CN01V8VO2y2H0M5Bx33L3_!!3603079088.jpg'
+    ]
+  }
+}

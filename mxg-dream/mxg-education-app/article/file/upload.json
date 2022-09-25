@@ -1,0 +1,6 @@
+{
+  "code": 20000,
+  "message": "成功",
+  // 图片地址可能无法访问，自动更换
+  "data": "https://mengxuegu.oss-cn-shenzhen.aliyuncs.com/articel/20210123/3984a904f689443490d3c141baecb1cb.JPG"
+}

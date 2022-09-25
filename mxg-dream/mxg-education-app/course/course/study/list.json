@@ -1,0 +1,11 @@
+{
+  "code": 20000,
+  "message": "查询成功",
+  "data|8-20": [{ //产生8-20条
+    "id|+1": 10, //初始值10开始，每条+1
+    "title": "@csentence", // 标题
+    // 主图
+    "mainImage|+1": ['/static/images/banner2.jpg', '/static/images/banner1.jpg', '/static/images/banner3.jpg', 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg'],
+    "percent": "@integer(0, 100)"
+  }]
+}
