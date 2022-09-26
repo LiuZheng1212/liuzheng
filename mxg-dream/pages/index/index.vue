@@ -8,7 +8,7 @@
 		<banner :bannerList="bannerList" @swiperItem="swiperItem"></banner>
 		<!-- 分类搜索 -->
 		<view class="cate-box">
-			<view v-for="item in list" :key="item.id">{{item.name}}</view>
+			<view v-for="item in list" :key="item.id" @click="toContentView(item.name)">{{item.name}}</view>
 			
 			<view @click="btn">全部分类</view>
 		</view>
@@ -74,7 +74,7 @@
 			// 点击跳转全部
 			const btn = () => {
 				console.log(1);
-				router.push('/pages/classification/classification')
+				router.push('/pages/contentView/contentView')
 			}
 			// 请求轮播图数据
 			getBanner().then(res => {
@@ -144,11 +144,19 @@
 					
 				});
 			})
+			// 去课程页面
+			const toContentView=(name)=>{
+				console.log(name);
+				uni.navigateTo({
+					url:`/pages/contentView/contentView?name=${name}`
+				})
+			}
 			return {
 				...toRefs(data),
 				btn,
 				swiperItem,
-				toTop
+				toTop,
+				toContentView
 			}
 		}
 		

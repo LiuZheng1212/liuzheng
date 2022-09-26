@@ -23,7 +23,7 @@
 			
 			<view class="right">
 				<view class="right-box">
-					<view class="right-item" v-for="obj in arrList" :key="obj.id">
+					<view class="right-item" v-for="obj in arrList" :key="obj.id" @click="toCateDetail(obj.id)">
 						{{obj.name}}
 					</view>
 				</view>
@@ -54,10 +54,17 @@
 				data.list=res.data
 				data.arrList=res.data[data.ids-1].labelList
 			});
-			
+			const toCateDetail=(id)=>{
+				console.log(1);
+				console.log(id);
+				uni.navigateTo({
+					url:`/pages/contentView/contentView?id=${id}`
+				})
+			}
 			return {
 				...toRefs(data),
-				btn
+				btn,
+				toCateDetail
 			}
 		}
 	}

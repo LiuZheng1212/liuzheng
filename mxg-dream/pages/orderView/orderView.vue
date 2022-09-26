@@ -33,41 +33,50 @@
 			</view>
 			<div class="payment">
 				<div class="buy1" v-if="obj.status==1">
-					<p class="sf fr">实付: <span>￥395.02</span></p>
+					<p class="sf fr">实付: <span>￥{{obj.priceDiscount}}</span></p>
 					<p class="zf">
 						<span class="sp">待支付</span>
 						<span>
-							<button>取消订单</button>
-							<button>立即订单</button>
+							<button @click="qx">取消订单</button>
+							<button @click="payment(obj)">立即支付</button>
 						</span>
 					</p>
 				</div>
 				<div class="buy2" v-if="obj.status==2">
-					<p class="sf  fr">实付:<span>￥956</span></p>
+					<p class="sf  fr">实付:<span>￥{{obj.priceDiscount}}</span></p>
 					<p class="down">交易成功</p>
 				</div>
 				<div class="buy3" v-if="obj.status==3">
-					<p class="sf">实付: <span>￥956</span> </p>
+					<p class="sf">实付: <span>￥{{obj.priceDiscount}}</span> </p>
 					<p class="pap">
 						<span class="gb">交易关闭</span>
-						<button>删除订单</button>
+						<button @click="del">删除订单</button>
 					</p>
 				</div>
 			</div>
 		</div>
+		<uni-popup ref="popup" type="dialog">
+			<uni-popup-dialog  title="确定取消该订单记录？" :duration="2000" :before-close="true" @close="close" @confirm="confirm"></uni-popup-dialog>
+		</uni-popup>
+		<uni-popup ref="popups" type="dialog">
+			<uni-popup-dialog  title="确定要删除该订单记录？" :duration="2000" :before-close="true" @close="closes" @confirm="confirms"></uni-popup-dialog>
+		</uni-popup>
 	</view>
 </template>
 
 <script>
 	import {
 		reactive,
-		toRefs
+		toRefs,
+		ref
 	} from 'vue'
 	import {
 		order
 	} from '@/api/http/http.js'
 	export default {
 		setup() {
+			const popup=ref(null)
+			const popups=ref(null)
 			const data = reactive({
 				list: []
 			})
@@ -75,8 +84,46 @@
 				console.log(res.data);
 				data.list = res.data
 			})
+			const payment=(item)=>{
+				console.log(1);
+				console.log(item);
+				uni.navigateTo({
+					url:`/pages/paymentVie/paymentVie?price=${item.priceDiscount}`
+				})
+			}
+			// 取消弹框
+			const qx=()=>{
+				popup.value.open()
+			}
+			const close=()=>{
+				popup.value.close()
+			}
+			// 确定
+			const confirm=()=>{
+				popup.value.close()
+			}
+			// 删除订单
+			const del=()=>{
+				popups.value.open()
+			}
+			const closes=()=>{
+				popups.value.close()
+			}
+			// 确定
+			const confirms=()=>{
+				popups.value.close()
+			}
 			return {
-				...toRefs(data)
+				...toRefs(data),
+				payment,
+				popup,
+				popups,
+				qx,
+				close,
+				confirm,
+				closes,
+				confirms,
+				del
 			}
 		}
 	}

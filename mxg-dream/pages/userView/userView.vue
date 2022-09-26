@@ -46,17 +46,22 @@
 			</li>
 		</ul>
 		<button @click="signout">退出登录</button>
+		<uni-popup ref="popup" type="dialog">
+			<uni-popup-dialog  title="你确定要退出吗？" :duration="2000" :before-close="true" @close="close" @confirm="confirm"></uni-popup-dialog>
+		</uni-popup>
+
 	</view>
 </template>
 
 <script>
 	import {useRoute,useRouter} from 'vue-router'
-	import {reactive,toRefs} from 'vue'
+	import {reactive,toRefs,ref} from 'vue'
 	export default {
 		setup() {
 			const router =useRouter()
+			const popup=ref(null)
 			const data=reactive({
-				user:{}
+				user:{},
 			})
 		 data.user=JSON.parse(sessionStorage.getItem('data'))
 		 console.log(data.user);
@@ -64,14 +69,26 @@
 			 // uni.switchTab({
 			 // 	url:'/pages/mineView/mineView'
 			 // })
+			 popup.value.open()
+			
+		 }
+		 // 关闭
+		 const close=()=>{
+			 console.log(12);
+			 popup.value.close()
+		 }
+		 // 确定关闭
+		 const confirm=()=>{
+			 console.log(1);
 			 router.push('/pages/mineView/mineView')
 			 sessionStorage.clear()
-			 
-			
 		 }
 		 return {
 			 ...toRefs(data),
-			 signout
+			 signout,
+			 popup,
+			 close,
+			 confirm
 		 }
 		}
 	}

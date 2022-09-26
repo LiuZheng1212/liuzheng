@@ -75,9 +75,9 @@
 						</div>
 					</div>
 					<div class="p4" v-else>
-						<div class="box4" v-for="item1 in group" :key="item1.id" @click="btns(item1)">
+						<div class="box4" v-for="item1 in group" :key="item1.id" >
 							<h3>{{item1.title}}</h3>
-							<view class="course-item" v-for="item in item1.list" :key="item.id" >
+							<view class="course-item" v-for="item in item1.list" @click="btns(item1)" :key="item.id" >
 								<view class="course-img">
 									<image :src="item.mainImage" mode=""></image>
 									<p class="imgs">{{item.totalTime}}</p>
@@ -103,13 +103,15 @@
 							<div class="xia">
 								<span>￥{{item1.groupPrice}}</span>
 								<span><s>￥{{item1.totalPrice}}</s></span>
-								<span>购买套餐</span>
+								<span @click="buy(item1)">购买套餐</span>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<buyview></buyview>
+			<div class="foot">
+				<button>立即观看</button>
+			</div>
 		</div>
 	</view>
 </template>
@@ -218,19 +220,39 @@
 					`
 				})
 			}
+			// 购买
+			const buy=(item)=>{
+				console.log(item);
+				const group=JSON.stringify(item)
+				uni.navigateTo({	
+					url:`/pages/buysView/buysView?item=${group}`,
+				})
+			}
 			return {
 				...toRefs(data),
 				btn,
 				openVideo,
 				popup,
 				closePopup,
-				btns
+				btns,
+				buy
 			}
 		}
 	}
 </script>
 
 <style lang="scss">
+	.foot{
+		width: 100%;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		button{
+			border-radius: 30px;
+			background-color: #345dc2;
+			color: #fff;
+		}
+	}
 	.top{
 		position: relative;
 		.back{
@@ -353,6 +375,7 @@
 				}
 			}
 			.p4{
+
 				.xia{
 					margin: 10rpx 0;
 					border-top: 1px solid #ccc;
@@ -376,6 +399,7 @@
 					}
 				}
 				.box4{
+					margin-bottom: 50rpx;
 					.img1{
 							position: relative;
 							top: 2rpx;
