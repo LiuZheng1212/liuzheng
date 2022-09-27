@@ -1,0 +1,2 @@
+/**app.wxss**/
+@import './wxcomponents/dist/common/index.wxss'; 
