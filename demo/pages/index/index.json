@@ -1,6 +1,4 @@
 {
   "usingComponents": {
-    "van-button": "../../wxcomponents/dist/button/index",
-    "van-popup": "../../wxcomponents/dist/popup/index"
   }
 }

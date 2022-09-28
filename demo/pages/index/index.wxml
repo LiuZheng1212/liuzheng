@@ -1,7 +1,42 @@
 <!--index.wxml-->
 <view class="container">
+    <!-- 第一个弹框 -->
+    <van-popup show="{{ firShow }}" position="bottom" custom-style="max-height: 73%;" bind:close="onClose">
+        <view class="title">
+            <text bindtap="onClose"></text>
+            <text>选择考试</text>
+        </view>
+        <view class="select {{firId == item.id ? 'selectActive' : ''}}" wx:for="{{ firstClassify }}" wx:key="index" data-id="{{item.id}}" data-title="{{item.title}}" bindtap="openSec">
+            <view>{{ item.title }}</view>
+            <view wx:if="{{item.brief}}">{{ item.brief }}</view>
+        </view>
+    </van-popup>
+    <!-- 第二个弹框 -->
+    <van-popup show="{{ secShow }}" position="bottom" custom-style="height: 30%;" bind:close="onClose">
+        <view class="title">
+            <text bindtap="backFir"></text>
+            <text>{{ secTitle }}</text>
+        </view>
+        <view class="ks select {{ secId == 1 ? 'selectActive' : '' }}" data-id="1" bindtap="openLast">
+            <view>在校生</view>
+        </view>
+        <view class="ks select {{ secId == 2 ? 'selectActive' : '' }}" data-id="2" bindtap="openLast">
+            <view>在职</view>
+        </view>
+    </van-popup>
+    <!-- 第三个弹框 -->
+    <van-popup show="{{ lastShow }}" position="bottom" custom-style="max-height: 73%;" bind:close="onClose">
+        <view class="title">
+            <text bindtap="backSec"></text>
+            <text>{{ secTitle }}</text>
+            <text class="fulfil" bindtap="complete" wx:if="{{ LastId != null }}">完成</text>
+        </view>
+        <view class="ks select {{ LastId == item.major_id ? 'selectActive' : ''}}" data-id="{{ item.major_id }}" bindtap="selectLast" wx:for="{{ lastList }}" wx:key="index">
+            <view>{{ item.major_name }}</view>
+        </view>
+    </van-popup>
     <view class="header">
-        <view>管理类联考 > </view>
+        <view bindtap="openFirShow" data-id="{{navTitle.id}}">{{ navTitle.title }} > </view>
         <view>
             <image src="../../images/搜索.png"></image>
             <image src="../../images/小怪兽.png"></image>
@@ -103,25 +138,27 @@
             <view style="margin-top: 20rpx;">推荐好课</view>
         </view>
         <view class="lb-item" wx:for="{{9}}" wx:key="index">
-                <view class="lb-title">
-                    23政英｜考研政英80+特训营
-                </view>
-                <view class="label-type">
-                    <text>系统课</text>
-                    <text>2课时</text>
-                </view>
-                <view class="lbi-teacher">
-                    <view>
-                        <image src="https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/image/2020af1zvps41607912321.jpg"></image>
-                        <text>陈正康</text>
-                    </view>
-                    <view>
-                        <image src="https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/image/2020576ztzcv1579054635.jpg"></image>
-                        <text>曲艺</text>
-                    </view>
-                </view>
-                <text class="lb-label">考验英语</text>
-                <text class="lesson-not-sell"></text>
+            <view class="lb-title">
+                23政英｜考研政英80+特训营
             </view>
+            <view class="label-type">
+                2022.07.07
+            </view>
+            <view class="lbi-teacher">
+                <view>
+                    <image src="https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/image/2020af1zvps41607912321.jpg"></image>
+                    <text>陈正康</text>
+                </view>
+                <view>
+                    <image src="https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/image/2020576ztzcv1579054635.jpg"></image>
+                    <text>曲艺</text>
+                </view>
+            </view>
+            <view class="lbi-info">
+                <view>240人以报道</view>
+                <view>免费</view>
+            </view>
+            <text class="lb-label">考验英语</text>
+        </view>
     </view>
 </view>
