@@ -17,7 +17,10 @@ Page({
         lastShow: false, // last第三个弹窗状态
         lastList: [], // 考试专业
         secId: null,
-        LastId: null
+        LastId: null,
+        todayList: [], // 今日直播
+        courseList: [], // 免费直播课
+        config: {} // 获取考验时间
     },
     // 事件处理函数
     bindViewTap() {},
@@ -29,12 +32,29 @@ Page({
                 })
             }
         })
-        // 获取轮播图
-        this.getBanner(1)
         getRequest('/app/home/exam/1').then(res => {
             // console.log(res.data);
             this.setData({
                 navTitle: res.data
+            })
+        })
+        // 获取轮播图
+        this.getBanner(1)
+        // 获取今日直播
+        getRequest('/app/home/liveToday/:classify_id').then(res => {
+            this.setData({
+                todayList: res.data
+            })
+        })
+        getRequest('/app/home/marketingCourse/1?classify_id=1').then(res => {
+            console.log(res);
+            this.setData({
+                courseList: res.data
+            })
+        })
+        getRequest('/app/home/operateConfig').then(res => {
+            this.setData({
+                config: res.data
             })
         })
     },
@@ -120,7 +140,7 @@ Page({
     },
     // 获取轮播图
     getBanner(id) {
-        getRequest(`/app/home/banner/${id}/4`).then((res) => {
+        getRequest(`/app/home/banner/${id}/${this.data.navTitle.id ? this.data.navTitle.id : 1}`).then((res) => {
             this.setData({
                 banner: res.data
             })

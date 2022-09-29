@@ -1,0 +1,1 @@
+<view class="content"><view class="header"><view class="search"> 搜索 </view></view><view class="banner"><u-swiper wx:if="{{a}}" u-i="c237baba-0" bind:__l="__l" u-p="{{a}}"></u-swiper></view><view class="nav"><view wx:for="{{b}}" wx:for-item="item" wx:key="b" class="nav-item"><image src="{{item.a}}" mode=""></image></view></view></view>

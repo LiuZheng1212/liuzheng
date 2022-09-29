@@ -2,10 +2,12 @@
     background-color: #f15a24 !important;
     color: #fff;
 }
+
 .van-popup .select view:nth-child(1) {
     font-size: 28rpx;
     margin-top: 18rpx;
 }
+
 .van-popup .select view:nth-child(2) {
     font-size: 25rpx;
 }
@@ -35,9 +37,11 @@
     position: absolute;
     left: -200rpx;
 }
+
 .van-popup .title text:nth-child(1) {
     position: relative;
 }
+
 .van-popup .title .fulfil {
     position: absolute;
     right: 70rpx;
@@ -59,10 +63,12 @@
 .hone .lb-item .lbi-info view:nth-child(1) {
     color: #666666;
 }
+
 .hone .lb-item .lbi-info view:nth-child(2) {
     color: green;
     font-size: 28rpx;
 }
+
 .hone .lb-item .lbi-info {
     display: flex;
     justify-content: space-between;
@@ -148,6 +154,7 @@
     text-align: center;
     color: #f15a24;
 }
+
 .home-jx-box .home-jx-item .home-jx-price {
     width: 120rpx;
     height: 30rpx;
@@ -162,6 +169,12 @@
 .home-jx-box .home-jx-item .home-jx-title {
     width: 90%;
     margin: 20rpx auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    height: 80rpx;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .home-jx-box .home-jx-item image {
@@ -174,6 +187,7 @@
     width: 80rpx;
     height: 80rpx;
 }
+
 .home-jx-box .home-jx-item image:nth-child(2) {
     width: 75rpx;
     height: 75rpx;
@@ -191,6 +205,7 @@
     padding: 30rpx;
     box-sizing: border-box;
 }
+
 .home-jx-box {
     display: flex;
     justify-content: space-around;
@@ -203,13 +218,16 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .hone .hone-title view:nth-child(1) {
     font-size: 35rpx;
     font-weight: 600;
 }
+
 .hone .hone-title view:nth-child(2) {
     font-size: 25rpx;
 }
+
 .hone {
     padding: 20rpx;
 }

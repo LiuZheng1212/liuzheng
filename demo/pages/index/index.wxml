@@ -77,60 +77,30 @@
             <image src="data:image/png;base64,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"></image>
         </view>
         <view class="time">
-            距离考研87天
+            距离考研{{ config.residue_date }}天
         </view>
     </view>
     <view class="hone">
         <view class="hone-title">
-            <view>免费直播课</view>
+            <view>{{ courseList.model_name }}</view>
             <view>
                 查看全部 >
             </view>
         </view>
         <view class="home-jx-box">
-            <view class="home-jx-item">
+            <view class="home-jx-item" wx:for="{{courseList.course_list}}" wx:key="index">
                 <view class="home-jx-avatar">
                     <image src="/images/直播.png"></image>
-                    <image src="https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/image/20224wnkersk1659940001.png"></image>
+                    <image  src="{{item.teacher[0].avatar}}"></image>
                 </view>
                 <view class="home-jx-title">
-                    23管综考前40天面授集训说明会（今晚19点直播）
+                    {{ item.title }}
                 </view>
                 <view class="home-jx-price">
                     免费
                 </view>
                 <view class="home-jx-tip">
-                    3542人已报名
-                </view>
-            </view>
-            <view class="home-jx-item">
-                <view class="home-jx-avatar">
-                    <image src="/images/直播.png"></image>
-                    <image src="https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/image/20224wnkersk1659940001.png"></image>
-                </view>
-                <view class="home-jx-title">
-                    23管综考前40天面授集训说明会（今晚19点直播）
-                </view>
-                <view class="home-jx-price">
-                    免费
-                </view>
-                <view class="home-jx-tip">
-                    3542人已报名
-                </view>
-            </view>
-            <view class="home-jx-item">
-                <view class="home-jx-avatar">
-                    <image src="/images/直播.png"></image>
-                    <image src="https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/image/20224wnkersk1659940001.png"></image>
-                </view>
-                <view class="home-jx-title">
-                    23管综考前40天面授集训说明会（今晚19点直播）
-                </view>
-                <view class="home-jx-price">
-                    免费
-                </view>
-                <view class="home-jx-tip">
-                    3542人已报名
+                    {{ item.sales_num }}人已报名
                 </view>
             </view>
         </view>
