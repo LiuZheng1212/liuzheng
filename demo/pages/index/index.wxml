@@ -46,7 +46,7 @@
         <view class="{{navId == 1 ? 'active' : ''}}" data-id="{{1}}" bindtap="selectNav">精选</view>
         <view class="{{navId == item.id ? 'active' : ''}}" wx:for="{{navList}}" data-id="{{item.id}}" bindtap="selectNav" wx:key="index">
             {{item.title}}
-        </view>
+        </view> 
     </view>
     <view class="swiper">
         <swiper circular="true" style="height: 130px;" autoplay="true" interval="2000" indicator-dots="true" indicator-active-color="#fff">

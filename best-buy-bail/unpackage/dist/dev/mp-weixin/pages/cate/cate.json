@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "商品分类",
+  "enablePullDownRefresh": false,
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#eb4450",
+  "usingComponents": {
+    "u-button": "../../uni_modules/vk-uview-ui/components/u-button/u-button",
+    "u-grid-item": "../../uni_modules/vk-uview-ui/components/u-grid-item/u-grid-item",
+    "u-grid": "../../uni_modules/vk-uview-ui/components/u-grid/u-grid"
+  }
+}
