@@ -1,0 +1,300 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/*文本基本颜色*/
+.header {
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #345dc2;
+  color: #fff;
+  font-weight: 600;
+  font-size: 35rpx;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+.header .back::before {
+  position: absolute;
+  top: 38rpx;
+  left: 30rpx;
+  display: inline-block;
+  content: "";
+  width: 20rpx;
+  height: 20rpx;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg);
+}
+.header .title {
+  display: inline-block;
+  width: 70%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.bottom-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.bottom-box .buy-btn {
+  border: none;
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 94%;
+  background-color: #345dc2;
+  color: #fff;
+  border-radius: 50rpx;
+}
+.tab-content {
+  width: 100%;
+}
+.tab-content .fir-tab,
+.tab-content .sec-tab,
+.tab-content .thr-tab,
+.tab-content .last-tab {
+  width: 100%;
+  padding-bottom: 60rpx;
+}
+.tab-content .fir-tab image,
+.tab-content .sec-tab image,
+.tab-content .thr-tab image,
+.tab-content .last-tab image {
+  width: 100%;
+  display: block;
+}
+.tab-content .last-tab {
+  padding: 20rpx;
+}
+.tab-content .last-tab .content {
+  width: 96%;
+  margin: 30rpx auto;
+  padding: 10rpx;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.tab-content .last-tab .content .purchase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tab-content .last-tab .content .purchase p {
+  color: #fb403b;
+  font-weight: 600;
+  font-size: 30rpx;
+}
+.tab-content .last-tab .content .purchase h3 {
+  color: #fb403b;
+}
+.tab-content .last-tab .content .purchase h3 s {
+  color: #79797b;
+  font-size: 30rpx;
+}
+.tab-content .fir-tab {
+  height: 100%;
+}
+.tab-content .fir-tab image {
+  height: 22112rpx;
+}
+.tab-content .sec-tab {
+  padding: 30rpx;
+}
+.tab-content .sec-tab .sec-tab-content h4 {
+  font-weight: 600;
+  color: #333333;
+  font-size: 35rpx;
+}
+.tab-content .sec-tab .sec-tab-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.tab-content .sec-tab .sec-tab-content ul li {
+  display: flex;
+  justify-content: space-between;
+  height: 100rpx;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.tab-content .sec-tab .sec-tab-content ul li .left {
+  display: flex;
+  align-items: center;
+}
+.tab-content .sec-tab .sec-tab-content ul li .left image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.tab-content .sec-tab .sec-tab-content ul li .left text {
+  font-size: 30rpx;
+  color: #79797b;
+  margin-left: 10rpx;
+  font-weight: 540;
+}
+.tab-content .sec-tab .sec-tab-content ul li .right {
+  color: #007aff;
+  font-size: 30rpx;
+}
+.tab-content .thr-tab {
+  padding: 20rpx;
+}
+.tab-content .thr-tab .thr-tab-item {
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+}
+.tab-content .thr-tab .thr-tab-item .content {
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  color: #79797b;
+}
+.tab-content .thr-tab .thr-tab-item .childContent {
+  background-color: #f8f9fb;
+  color: #79797b;
+  padding: 10rpx;
+  margin: 10rpx 0;
+  font-size: 30rpx;
+}
+.tab-content .thr-tab .thr-tab-item .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.tab-content .thr-tab .thr-tab-item .top .flower {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}
+.tab-content .thr-tab .thr-tab-item .top .left {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+.tab-content .thr-tab .thr-tab-item .top .left image:nth-child(1) {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.tab-content .thr-tab .thr-tab-item .top .left view {
+  margin-left: 20rpx;
+}
+.tab-content .thr-tab .thr-tab-item .top .left view h3 {
+  font-size: 30rpx;
+}
+.tab-content .thr-tab .thr-tab-item .top .left view p {
+  font-size: 25rpx;
+  color: #79797b;
+}
+.tab-box {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.tab-box .tab-item {
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.tab-box .active {
+  border-bottom: 4rpx solid #007aff;
+  color: #007aff;
+}
+.content-text {
+  width: 100%;
+  padding: 3%;
+  border-bottom: 30rpx solid #f8f9fb;
+}
+.content-text .fir-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.content-text .fir-text .left {
+  color: red;
+  font-weight: 600;
+  font-size: 45rpx;
+}
+.content-text .fir-text .center {
+  color: #999999;
+  margin: 0 2%;
+}
+.content-text .fir-text .last {
+  width: 80rpx;
+  height: 30rpx;
+  border: 1px solid red;
+  color: red;
+  text-align: center;
+  border-radius: 10rpx;
+  line-height: 30rpx;
+  font-size: 20rpx;
+}
+.content-text .center-text {
+  font-weight: 600;
+  font-size: 36rpx;
+}
+.content-text .last-text {
+  width: 100%;
+  display: flex;
+  margin: 2% 0;
+  color: #8d8d8d;
+}
+.content-text .last-text .left,
+.content-text .last-text .right {
+  width: 200rpx;
+  height: 70rpx;
+  text-align: center;
+  line-height: 70rpx;
+  border-radius: 40rpx;
+  background-color: #f8f9fb;
+}
+.content-text .last-text .left {
+  margin-right: 3%;
+}
+.top-pic {
+  width: 100%;
+  position: relative;
+}
+.top-pic span {
+  position: absolute;
+  width: 64rpx;
+  height: 64rpx;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 2%;
+  left: 2%;
+  border-radius: 50%;
+  z-index: 1;
+}
+.top-pic span::before {
+  content: "";
+  width: 23rpx;
+  height: 23rpx;
+  border-left: 4rpx solid #fff;
+  border-bottom: 4rpx solid #fff;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  transform: rotate(45deg);
+}
+.top-pic image {
+  width: 100%;
+}

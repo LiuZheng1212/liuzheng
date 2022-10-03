@@ -1,0 +1,1 @@
+<view><swiper bindchange="{{b}}" indicator-dots="{{true}}" indicator-active-color="#fff" autoplay="{{true}}" interval="{{3000}}" duration="{{1500}}"><swiper-item wx:for="{{a}}" wx:for-item="item" wx:key="b" class="swiper-item" style="{{item.c}}"><view><image src="{{item.a}}"></image></view></swiper-item></swiper></view>

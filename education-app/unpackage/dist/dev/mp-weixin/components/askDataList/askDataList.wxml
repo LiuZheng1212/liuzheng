@@ -1,0 +1,1 @@
+<view><view class="ask-box"><view wx:for="{{a}}" wx:for-item="item" wx:key="f" class="ask-item" bindtap="{{item.g}}"><view class="fir-text">{{item.a}}</view><view class="sec-text"><view class="left">{{item.b}}回答 · {{item.c}}浏览 </view><view class="right">{{item.d}} · {{item.e}}</view></view></view></view></view>

@@ -1,0 +1,1 @@
+<view><view class="top"><view class="lt"><text class="lt-text" bindtap="{{a}}"></text></view><view class="center"><input type="text" bindconfirm="{{b}}" placeholder="搜索你想要的内容" value="{{c}}" bindinput="{{d}}"></input></view><view bindtap="{{e}}">取消</view></view></view>

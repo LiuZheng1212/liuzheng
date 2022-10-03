@@ -1,0 +1,1 @@
+<view><view class="search" bindtap="{{a}}"><image src="/static/images/search.png" mode=""></image><text>搜索你想要的内容</text></view></view>
