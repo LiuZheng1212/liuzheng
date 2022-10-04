@@ -1,0 +1,39 @@
+<!--pages/huatiList/huatiList.wxml-->
+<view class="header">
+    <text bindtap="back"></text>
+</view>
+
+<view class="content">
+    <view class="lb_item" wx:for="{{hotList}}" wx:key="index" bindtap="toHuatiDetails" data-id="{{item.theme_id}}">
+        <view class="lb_item-top">
+            <view>
+                <image src="{{item.cover}}"></image> <text>@{{item.last_dyna_nickname}} 刚刚讨论</text>
+            </view>
+            <view>{{item.browse_num}}浏览 · {{item.dyna_count}}讨论</view>
+        </view>
+        <view class="lb_item-content" style="background: url('{{item.background ? item.background : 'https://wap.lexuemiao.com/img/htbj4.9c5faa91.png'}}') no-repeat; background-size: 100% 100%;">
+            <view class="title">
+                <text class="jing"></text>
+                <text class="e_tps">{{item.title}}</text>
+                <text class="jing"></text>
+            </view>
+            <view class="txt">
+                {{item.details}}
+            </view>
+        </view>
+    </view>
+    <view class="lb_item2" wx:for="{{hotList2}}" wx:key="index">
+        <view class="lb_item2-left">
+            <image src="{{item.cover}}"></image>
+        </view>
+        <view class="lb_item2-right">
+            <view class="title">
+                <text class="jing"></text>
+                <text class="e_tps">{{item.title}}</text>
+                <text class="jing"></text>
+            </view>
+            <text>{{item.details}}</text>
+            <view class="pl">{{item.browse_num}} 浏览 · {{item.dyna_count}} 评论</view>
+        </view>
+    </view>
+</view>

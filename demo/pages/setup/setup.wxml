@@ -1,0 +1,35 @@
+<!--pages/setup/setup.wxml-->
+<view class="nav">
+    <image bindtap="back" src="../../images/返回.png"></image>
+    <text>设置</text>
+</view>
+<view class="ul">
+    <view class="li">
+        <view>更换绑定手机号</view>
+        <view>
+            <text>16638351540</text>
+            <image src="../../images/向右箭头.png"></image>
+        </view>
+    </view>
+    <view class="li">
+        <view>设置密码</view>
+        <view>
+            <image src="../../images/向右箭头.png"></image>
+        </view>
+    </view>
+    <view class="li">
+        <view>关于我们</view>
+        <view>
+            <image src="../../images/向右箭头.png"></image>
+        </view>
+    </view>
+    <view class="li">
+        <view>上课短信通知</view>
+        <view>
+            <van-switch checked="{{ checked }}" bind:change="onChange" active-color="red" inactive-color="#ee0a24" />
+        </view>
+    </view>
+</view>
+<view class="foot">
+    <button bindtap="tc">退出登录</button>
+</view>

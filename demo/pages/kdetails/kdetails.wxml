@@ -1,0 +1,200 @@
+<!--pages/kdetails/kdetails.wxml-->
+<!-- 头部 -->
+<view class="top">
+  <view class="right">
+    <!-- <image src="/static/image/left.png"></image> -->
+  </view>
+  <view class="title">
+    课程详情
+  </view>
+  <view class="left">
+    <image src="/images/收藏.png"></image>
+    <image src="/images/分享2.png"></image>
+  </view>
+</view>
+<!-- 轮播图 -->
+<swiper class="swiper">
+  <swiper-item>
+    <image src="https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/file/2022xsttr3321663914578.jpg"></image>
+  </swiper-item>
+</swiper>
+<!-- 标题内容 -->
+<view class="content">
+  <view class="title">23管综考前40天面授集训说明会（回放）</view>
+  <view class="type"><text>共2 个课时 | </text><text>直播课</text>
+    <view class="num"> 已报名3728人</view>
+    <view class="to">
+      <image src="https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/image/20224wnkersk1659940001.png"></image>
+      <text>吕建刚</text>
+    </view>
+    <view class="to">
+      <image src="https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/image/20224wnkersk1659940001.png"></image>
+      <text>吕建刚</text>
+    </view>
+  </view>
+</view>
+<!-- 切换标签 -->
+<van-tabs active="{{ 3 }}" bind:change="onChange">
+  <!-- 课程详情  -->
+  <van-tab title="课程详情">
+    <view class="tabs-box">
+      <image src=https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/image/f17a9c5ed8649ab4fd6b07daa7e83096.jpg" mode="widthFix"></image>
+    </view>
+  </van-tab>
+  <!-- 课程安排 -->
+  <van-tab title="课程安排">
+    <view class="tabs-box">
+      <!-- 切换  -->
+      <view class="sort-box">
+        <view class="sort-box-active">
+          <image src="/images/列表.png"></image>
+          <text>章节分类</text>
+        </view>
+        <view>
+          <image src="/images/闹钟.png"></image>
+          <text>时间排序</text>
+        </view>
+      </view>
+      <view class="list">
+        <view>康哥英语大纲解读暨考前百日冲刺计划（回放）</view>
+        <image src="/images/下箭头.png"></image>
+      </view>
+      <view class="list">
+        <view> 潘鑫 | 396经综数学大纲解析（打开目录看回放）</view>
+        <image src="/images/下箭头.png"></image>
+      </view>
+      <view class="list">
+        <view>康哥英语大纲解读暨考前百日冲刺计划（回放）</view>
+        <image src="/images/下箭头.png"></image>
+      </view>
+      <view class="list">
+        <view>康哥英语大纲解读暨考前百日冲刺计划（回放）</view>
+        <image src="/images/下箭头.png"></image>
+      </view>
+    </view>
+  </van-tab>
+  <!-- 资料下载  -->
+  <van-tab title="资料下载">
+    <view class="tabs-box">
+      <view class="list">
+        <view>
+          逻辑、写作大纲解读和命题趋势分析（已生成回放）
+        </view>
+        <image src="/images/下箭头.png"></image>
+        <view class="num">2</view>
+      </view>
+    </view>
+  </van-tab>
+  <!-- 课程评价 -->
+  <van-tab title="课程评价">
+    <view class="tabs-box">
+      <view class="ping">
+        <view class="left">
+          <view class="img">
+            <image src="https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/images/avatar.jpg"></image>
+          </view>
+        </view>
+        <view class="right">
+          <view class="name">156****2848</view>
+          <view>
+            <image src="/images/星星.png"></image>
+            <image src="/images/星星.png"></image>
+            <image src="/images/星星.png"></image>
+            <image src="/images/星星.png"></image>
+            <image src="/images/星星.png"></image>
+          </view>
+          <view class="hui">讲的非常好 简单易懂 在职人考研的首选</view>
+          <view class="hui">2022-09-19 08:45</view>
+        </view>
+      </view>
+      <view class="ping">
+        <view class="left">
+          <view class="img">
+            <image src="https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/images/avatar.jpg"></image>
+          </view>
+        </view>
+        <view class="right">
+          <view class="name">156****2848</view>
+          <view>
+            <image src="/images/星星.png"></image>
+            <image src="/images/星星.png"></image>
+            <image src="/images/星星.png"></image>
+            <image src="/images/星星.png"></image>
+            <image src="/images/星星.png"></image>
+          </view>
+          <view class="hui">讲的非常好 简单易懂 在职人考研的首选</view>
+          <view class="hui">2022-09-19 08:45</view>
+        </view>
+      </view>
+      <view class="ping">
+        <view class="left">
+          <view class="img">
+            <image src="https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/images/avatar.jpg"></image>
+          </view>
+        </view>
+        <view class="right">
+          <view class="name">156****2848</view>
+          <view>
+            <image src="/images/星星.png"></image>
+            <image src="/images/星星.png"></image>
+            <image src="/images/星星.png"></image>
+            <image src="/images/星星.png"></image>
+            <image src="/images/星星.png"></image>
+          </view>
+          <view class="hui">讲的非常好 简单易懂 在职人考研的首选</view>
+          <view class="hui">2022-09-19 08:45</view>
+        </view>
+      </view>
+      <view class="ping">
+        <view class="left">
+          <view class="img">
+            <image src="https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/images/avatar.jpg"></image>
+          </view>
+        </view>
+        <view class="right">
+          <view class="name">156****2848</view>
+          <view>
+            <image src="/images/星星.png"></image>
+            <image src="/images/星星.png"></image>
+            <image src="/images/星星.png"></image>
+            <image src="/images/星星.png"></image>
+            <image src="/images/星星.png"></image>
+          </view>
+          <view class="hui">讲的非常好 简单易懂 在职人考研的首选</view>
+          <view class="hui">2022-09-19 08:45</view>
+        </view>
+      </view>
+      <view class="ping">
+        <view class="left">
+          <view class="img">
+            <image src="https://lexuemiao.oss-cn-beijing.aliyuncs.com/uploads/images/avatar.jpg"></image>
+          </view>
+        </view>
+        <view class="right">
+          <view class="name">156****2848</view>
+          <view>
+            <image src="/images/星星.png"></image>
+            <image src="/images/星星.png"></image>
+            <image src="/images/星星.png"></image>
+            <image src="/images/星星.png"></image>
+            <image src="/images/星星.png"></image>
+          </view>
+          <view class="hui">讲的非常好 简单易懂 在职人考研的首选</view>
+          <view class="hui">2022-09-19 08:45</view>
+        </view>
+      </view>
+    </view>
+  </van-tab>
+</van-tabs>
+<van-empty class="custom-image" image="https://wap.lexuemiao.com/img/empty.503e5ccb.png" description="暂无内容" />
+<!-- 尾部 -->
+<view class="footer">
+  <view class="left">
+    <view class="price">免费</view>
+    <view class="kefu">
+      <image src="/images/客服.png"></image>
+      <text>客服</text>
+    </view>
+  </view>
+  <view class="right">立即学习</view>
+</view>

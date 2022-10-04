@@ -1,0 +1,40 @@
+<!--pages/login/login.wxml-->
+<view class="content">
+    <view class="pic-box">
+        <image class="pic" src="https://wap.lexuemiao.com/img/logo@2x.a4702f31.png"></image>
+    </view>
+
+    <view class="ipt-box">
+        <view class="tel-box">
+            <image src="/images/手机号icon.png"></image>
+            <input type="text"  bindinput="tel" class="tel-ipt" placeholder="请输入手机号 " />
+            <button bindtap="yzms">获取验证码<text wx:if="{{a!=0}}">{{a}}</text></button>
+        </view>
+        <view class="pwd-box">
+            <image src="/images/护盾.png"></image>
+            <input class="code-ipt" bindinput="pwd" type="text" placeholder="请输入验证码" />
+        </view>
+
+        <view class="code-box">
+            <view class="left">
+                <image src="/images/护盾.png"></image>
+                <input type="text" bindinput="yzm" class="code-ipt" placeholder="请输入验证码" />
+            </view>
+            <view></view>
+            <view class="right" bindtap="gx">
+                <image src="{{img}}"></image>
+            </view>
+        </view>
+    </view>
+    <view class="login-btn" bindtap="zcs">
+        注册
+    </view>
+    <view class="bottom">
+        <view class="for-pwd">
+            未注册的手机号码将自动注册
+        </view>
+        <view class="code-login" bindtap="pwd">
+            密码登录
+        </view>
+    </view>
+</view>

@@ -1,0 +1,99 @@
+/* pages/my/my.wxss */
+.box{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+.head{
+    overflow: hidden;
+    width: 100%;
+    height: 340rpx;
+    background-image: url('https://wap.lexuemiao.com/img/user_bg.dd455109.png');
+    background-size:100% 100% ;
+}
+.head .icon{
+    float: right;
+    margin-top: 50rpx;
+    margin-right: 60rpx;
+    width: 44rpx;
+    height: 44rpx;
+}
+.names{
+    width: 100%;
+    text-align: center;
+    margin-top: 14%;
+    color: white;
+    font-size: 34rpx;
+}
+.names .font{
+    margin-top: 20rpx;
+}
+.head .son{
+    margin-left: 43%;
+    width: 100rpx;
+    height: 100rpx;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+}
+.head image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.con{
+    margin-top: 20rpx;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 10rpx;
+}
+.img22{
+    margin-top: 20rpx;
+}
+.con view{
+    text-align: center;
+    font-size: 33rpx;
+}
+.con .p{
+    font-size: 26rpx;
+    color: #c6c8d6;
+}
+.con view image{
+    width: 40rpx;
+    height: 40rpx;
+}
+.ul{
+    margin-top: 20rpx;
+    background-color: white;
+}
+.ul1{
+    margin-top: 20rpx;
+    background-color: white;
+}
+.ul .li image,.ul1 .li image{
+    width: 44rpx;
+    height: 44rpx;
+}
+.ul .li,.ul1 .li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20rpx 20rpx;
+    vertical-align: middle;
+    border-bottom: 1px solid #eee;
+}
+.ul .li .imgs,.ul1 .li .imgs{
+    position: relative;
+    top: 10rpx;
+    margin-right: 20rpx;
+}
+.ul1{
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}

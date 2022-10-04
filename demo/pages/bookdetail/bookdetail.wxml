@@ -1,0 +1,65 @@
+<!--pages/bookdetail/bookdetail.wxml-->
+<view class="top-txt">
+    {{list.title}}
+</view>
+
+<view class="top">
+    <view class="left">
+        <image src="{{list.avatar}}"></image>
+        <text>{{list.user_nickname}}</text>
+    </view>
+    <view class="right">
+        +关注
+    </view>
+</view>
+
+<view class="content">{{list.content}}</view>
+
+<view class="zhua">
+   <view class="like-box">
+    <image src="/images/下载.png"></image>
+    <text>{{list.likes}}</text>
+   </view>
+    <view class="txt">阅读{{list.pv}}</view>
+</view>
+
+<text class="hot-ask">热门评论</text>
+<view class="ask-pic" wx:if="{{askList.length==0}}">
+    <image src="https://wap.lexuemiao.com/img/noData2.ec86a21a.png" mode="widthFix"></image>
+    <view>还没有人评论</view>
+    <view>快来喵一下~</view>
+</view>
+<view class="ask-item" wx:for="{{askList}}" wx:key="{{item.id}}">
+
+    <view class="left-ask">
+        <image src="{{item.avatar}}"></image>
+    </view>
+    <view class="right-ask">
+        <view class="tel">{{item.user_nickname}}</view>
+        <view class="cont-txt">{{item.content}}</view>
+
+       <view class="box">
+        <image class="con-pic" src="{{item.content_img}}" mode="" wx:if="{{item.content_img}}"></image>
+       </view>
+    
+        <view class="foot-ask">
+            <view class="foot-left">
+                <text class="time-foot">{{item.updated_at}}前</text>
+                <text>回复</text>
+            </view>
+            <view class="foot-right">
+            <image src="/images/猫爪.png"></image>
+                {{item.reply_num}}
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class="bottom-box">
+<input type="text" placeholder="我来说两句" disabled="true" class="active" />
+<image src="/images/分享.png"></image>
+<image class="ping" src="/images/评论.png"></image>
+<image src="/images/猫爪.png"></image>
+<image src="/images/分享.png"></image>
+<text class="ding" wx:if="{{askList}}">56</text>
+</view>

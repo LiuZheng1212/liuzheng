@@ -1,0 +1,73 @@
+<!--pages/huatiDetails/huatiDetails.wxml-->
+<view class="header">
+    <text bindtap="back"></text>
+    <text>{{info.title}}</text>
+</view>
+<view class="w_bfb">
+    <view class="imgBox" style="background: url({{info.background}}) no-repeat; background-size: 100% 100%;">
+        <view class="title">
+            <text class="jing"></text>
+            <text>{{info.title}}</text>
+        </view>
+        <view class="txt">
+            {{info.details}}
+        </view>
+    </view>
+    <view class="bottom">
+        {{info.browse_num}} 浏览 · {{info.dyna_count}} 讨论
+    </view>
+</view>
+
+<view class="release" wx:for="{{dynaList}}" wx:key="index">
+    <view class="release-top">
+        <view class="left">
+            <!-- 头像 -->
+            <view class="img">
+                <image src="{{item.avatar}}" class="to"></image>
+                <image src="/images/v.png" class="v"></image>
+            </view>
+            <view class="name-box">
+                <!-- 账号名 -->
+                <view>{{item.user_nickname}}</view>
+                <!-- 日期 -->
+                <view class="time">08-19</view>
+            </view>
+        </view>
+        <!-- 关注 -->
+        <view class="right">
+            <view class="guan">
+                +关注</view>
+        </view>
+        <!-- 三个点 -->
+        <view class="dian">
+            <text></text>
+            <text></text>
+            <text></text>
+        </view>
+    </view>
+    <!-- 内容 -->
+    <view class="substance">
+        <view class="substance-title" wx:for="{{item.theme_details}}" wx:for-item="txt" wx:for-index="idx" wx:key="idx">
+            <text style="color:#405895">{{txt}}</text> {{item.dyna_details}}
+        </view>
+        <view class="{{ item.dyna_cover.length >= 3 ? 'substance-img2' : 'substance-img'}}">
+            <view wx:for="{{item.dyna_cover}}" wx:for-item="child" wx:for-index="i" wx:key="i">
+                <image src="{{child}}"></image>
+            </view>
+        </view>
+    </view>
+    <!-- 尾部 -->
+    <view class="footer">
+        <view>
+            <image src="/images/分享.png"></image>
+        </view>
+        <view>
+            <image src="/images/评论.png"></image>
+            <text>{{item.comment_count}}</text>
+        </view>
+        <view>
+            <image src="/images/猫爪.png"></image>
+            <text>{{item.likes}}</text>
+        </view>
+    </view>
+</view>
