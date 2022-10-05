@@ -1,0 +1,1 @@
+<view class="header"><view class="search" bindtap="{{a}}"> 搜索 </view></view>
