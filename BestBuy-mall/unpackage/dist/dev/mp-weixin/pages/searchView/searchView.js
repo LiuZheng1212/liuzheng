@@ -53,5 +53,5 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
     };
   }
 });
-var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "C:/Users/\u5218\u6668\u594E/Desktop/uniApp/BestBuy-mall/pages/searchView/searchView.vue"]]);
+var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "C:/Users/65458/Desktop/liuzheng/BestBuy-mall/pages/searchView/searchView.vue"]]);
 wx.createPage(MiniProgramPage);

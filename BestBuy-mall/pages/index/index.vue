@@ -32,7 +32,7 @@
 		navList: TS.NavData.message
 	} = reactive({
 		banner: [], // 轮播图数据
-		navList: []
+		navList: [],
 	})
 	// 获取轮播图
 	getSwiperData().then((res: TS.Swiper) => {

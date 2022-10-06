@@ -58,10 +58,10 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
                 a: child.cat_icon,
                 b: common_vendor.t(child.cat_name),
                 c: idx,
-                d: "235d63dd-5-" + i0 + "-" + i1 + "," + ("235d63dd-4-" + i0)
+                d: "34197e30-5-" + i0 + "-" + i1 + "," + ("34197e30-4-" + i0)
               };
             }),
-            c: "235d63dd-4-" + i0 + ",235d63dd-3",
+            c: "34197e30-4-" + i0 + ",34197e30-3",
             d: index
           };
         }),
@@ -79,5 +79,5 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
     };
   }
 });
-var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "C:/Users/\u5218\u6668\u594E/Desktop/uniApp/BestBuy-mall/pages/cate/cate.vue"]]);
+var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "C:/Users/65458/Desktop/liuzheng/BestBuy-mall/pages/cate/cate.vue"]]);
 wx.createPage(MiniProgramPage);

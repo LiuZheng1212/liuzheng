@@ -21,7 +21,7 @@ var inline = {
 let global = {};
 global.Parser = {};
 const trees = () => Promise.resolve().then(function() {
-  return QzovVXNlcnMv5YiY5pmo5aWOL0Rlc2t0b3AvdW5pQXBwL0Jlc3RCdXktbWFsbC91bmlfbW9kdWxlcy92ay11dmlldy11aS9jb21wb25lbnRzL3UtcGFyc2UvbGlicy90cmVlcy52dWU;
+  return QzovVXNlcnMvNjU0NTgvRGVza3RvcC9saXV6aGVuZy9CZXN0QnV5LW1hbGwvdW5pX21vZHVsZXMvdmstdXZpZXctdWkvY29tcG9uZW50cy91LXBhcnNlL2xpYnMvdHJlZXMudnVl;
 });
 const errorImg = uni_modules_vkUviewUi_components_uParse_libs_config.cfg.errorImg;
 const _sfc_main = {
@@ -234,7 +234,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
         aa: common_vendor.o((...args) => $options.error && $options.error(...args)),
         ab: common_vendor.o((...args) => $options.play && $options.play(...args))
       } : n.name == "a" ? {
-        ad: "4c5463d3-0-" + i0,
+        ad: "347d27e6-0-" + i0,
         ae: common_vendor.p({
           c: "_span",
           nodes: n.children
@@ -253,7 +253,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
       }, n.floor % 3 == 0 ? {} : n.floor % 3 == 2 ? {} : {}, {
         ao: n.floor % 3 == 2
       }), {
-        ap: "4c5463d3-1-" + i0,
+        ap: "347d27e6-1-" + i0,
         aq: common_vendor.p({
           c: "_li",
           nodes: n.children,
@@ -269,7 +269,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
             a: n2,
             b: common_vendor.n(cell.attrs.class),
             c: common_vendor.s(cell.attrs.style),
-            d: "4c5463d3-2-" + i0 + "-" + i1,
+            d: "347d27e6-2-" + i0 + "-" + i1,
             e: common_vendor.p({
               c: cell.attrs.class,
               s: cell.attrs.style,
@@ -287,7 +287,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
               return common_vendor.e({
                 a: tr.name == "td"
               }, tr.name == "td" ? {
-                b: "4c5463d3-3-" + i0 + "-" + i1 + "-" + i2,
+                b: "347d27e6-3-" + i0 + "-" + i1 + "-" + i2,
                 c: common_vendor.p({
                   nodes: tr.children
                 })
@@ -297,7 +297,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
                     a: q,
                     b: common_vendor.n(td.attrs.class),
                     c: common_vendor.s((td.attrs.style || "") + (td.name[0] == "t" ? ";display:table-" + (td.name == "tr" ? "row" : "cell") : "")),
-                    d: "4c5463d3-4-" + i0 + "-" + i1 + "-" + i2 + "-" + i3,
+                    d: "347d27e6-4-" + i0 + "-" + i1 + "-" + i2 + "-" + i3,
                     e: common_vendor.p({
                       c: td.attrs.class,
                       s: (td.attrs.style || "") + (td.name[0] == "t" ? ";display:table-" + (td.name == "tr" ? "row" : "cell") : ""),
@@ -326,7 +326,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
       } : {
         aJ: common_vendor.n((n.attrs.id || "") + " _" + n.name + " " + (n.attrs.class || "")),
         aK: common_vendor.s(n.attrs.style),
-        aL: "4c5463d3-5-" + i0,
+        aL: "347d27e6-5-" + i0,
         aM: common_vendor.p({
           c: (n.attrs.id || "") + " _" + n.name + " " + (n.attrs.class || ""),
           s: n.attrs.style,
@@ -352,9 +352,9 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     c: common_vendor.s($data.s)
   };
 }
-var Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "C:/Users/\u5218\u6668\u594E/Desktop/uniApp/BestBuy-mall/uni_modules/vk-uview-ui/components/u-parse/libs/trees.vue"]]);
+var Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "C:/Users/65458/Desktop/liuzheng/BestBuy-mall/uni_modules/vk-uview-ui/components/u-parse/libs/trees.vue"]]);
 wx.createComponent(Component);
-var QzovVXNlcnMv5YiY5pmo5aWOL0Rlc2t0b3AvdW5pQXBwL0Jlc3RCdXktbWFsbC91bmlfbW9kdWxlcy92ay11dmlldy11aS9jb21wb25lbnRzL3UtcGFyc2UvbGlicy90cmVlcy52dWU = /* @__PURE__ */ Object.freeze({
+var QzovVXNlcnMvNjU0NTgvRGVza3RvcC9saXV6aGVuZy9CZXN0QnV5LW1hbGwvdW5pX21vZHVsZXMvdmstdXZpZXctdWkvY29tcG9uZW50cy91LXBhcnNlL2xpYnMvdHJlZXMudnVl = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module"
 });

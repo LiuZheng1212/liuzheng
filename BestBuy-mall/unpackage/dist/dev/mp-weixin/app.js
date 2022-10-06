@@ -35,6 +35,7 @@ if (!Math) {
   "./pages/mine/mine.js";
   "./pages/searchView/searchView.js";
   "./pages/details/details.js";
+  "./pages/address/address/address.js";
 }
 const _sfc_main = {
   onLaunch: function() {
@@ -47,7 +48,7 @@ const _sfc_main = {
     console.log("App Hide");
   }
 };
-var App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "C:/Users/\u5218\u6668\u594E/Desktop/uniApp/BestBuy-mall/App.vue"]]);
+var App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "C:/Users/65458/Desktop/liuzheng/BestBuy-mall/App.vue"]]);
 function createApp() {
   const app = common_vendor.createSSRApp(App);
   app.use(uni_modules_vkUviewUi_index.uView);

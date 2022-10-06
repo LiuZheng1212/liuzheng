@@ -232,5 +232,5 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     c: common_vendor.s($data.showAm + ($props.selectable ? ";user-select:text;-webkit-user-select:text" : ""))
   });
 }
-var Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "C:/Users/\u5218\u6668\u594E/Desktop/uniApp/BestBuy-mall/uni_modules/vk-uview-ui/components/u-parse/u-parse.vue"]]);
+var Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "C:/Users/65458/Desktop/liuzheng/BestBuy-mall/uni_modules/vk-uview-ui/components/u-parse/u-parse.vue"]]);
 wx.createComponent(Component);

@@ -34,20 +34,20 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
           return {
             a: item.floor_title.image_src,
             b: item.product_list[0].image_src,
-            c: "319b5800-3-" + i0 + "," + ("319b5800-2-" + i0),
-            d: "319b5800-2-" + i0 + "," + ("319b5800-1-" + i0),
-            e: "319b5800-1-" + i0 + "," + ("319b5800-0-" + i0),
+            c: "69dc6113-3-" + i0 + "," + ("69dc6113-2-" + i0),
+            d: "69dc6113-2-" + i0 + "," + ("69dc6113-1-" + i0),
+            e: "69dc6113-1-" + i0 + "," + ("69dc6113-0-" + i0),
             f: common_vendor.f(item.product_list, (child, Idx, i1) => {
               return {
                 a: child.image_src,
                 b: Idx,
                 c: Idx != 0,
-                d: "319b5800-6-" + i0 + "-" + i1 + "," + ("319b5800-5-" + i0)
+                d: "69dc6113-6-" + i0 + "-" + i1 + "," + ("69dc6113-5-" + i0)
               };
             }),
-            g: "319b5800-5-" + i0 + "," + ("319b5800-4-" + i0),
-            h: "319b5800-4-" + i0 + "," + ("319b5800-0-" + i0),
-            i: "319b5800-0-" + i0,
+            g: "69dc6113-5-" + i0 + "," + ("69dc6113-4-" + i0),
+            h: "69dc6113-4-" + i0 + "," + ("69dc6113-0-" + i0),
+            i: "69dc6113-0-" + i0,
             j: index
           };
         }),
@@ -73,5 +73,5 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
     };
   }
 });
-var Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "C:/Users/\u5218\u6668\u594E/Desktop/uniApp/BestBuy-mall/pages/index/homeFlor/homeFlor.vue"]]);
+var Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "C:/Users/65458/Desktop/liuzheng/BestBuy-mall/pages/index/homeFlor/homeFlor.vue"]]);
 wx.createComponent(Component);

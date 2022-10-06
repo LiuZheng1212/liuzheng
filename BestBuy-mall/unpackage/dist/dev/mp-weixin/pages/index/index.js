@@ -46,7 +46,7 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
           return {
             a: item.image_src,
             b: item.id,
-            c: "c237baba-3-" + i0 + ",c237baba-2"
+            c: "7102f436-3-" + i0 + ",7102f436-2"
           };
         }),
         c: common_vendor.p({
@@ -57,5 +57,5 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
     };
   }
 });
-var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "C:/Users/\u5218\u6668\u594E/Desktop/uniApp/BestBuy-mall/pages/index/index.vue"]]);
+var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "C:/Users/65458/Desktop/liuzheng/BestBuy-mall/pages/index/index.vue"]]);
 wx.createPage(MiniProgramPage);

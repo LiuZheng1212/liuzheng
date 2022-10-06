@@ -51,6 +51,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/address/address/address",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
