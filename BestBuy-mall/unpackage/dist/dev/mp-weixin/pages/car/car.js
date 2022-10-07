@@ -23,9 +23,9 @@ const _sfc_main = {
   setup() {
     const data = common_vendor.reactive({
       goods: [],
-      ind: 0,
-      obj: {}
+      ind: 0
     });
+    const Address = common_vendor.ref({});
     const flag = common_vendor.ref(false);
     const show = common_vendor.ref(false);
     const addRess = common_vendor.ref(true);
@@ -92,7 +92,8 @@ const _sfc_main = {
     const getAdd = () => {
       common_vendor.index.chooseAddress({
         success: (res) => {
-          data.obj = res;
+          Address.value = res;
+          console.log(Address.value);
           addRess.value = false;
         }
       });
@@ -110,7 +111,8 @@ const _sfc_main = {
       checkChange,
       selectPrice,
       getAdd,
-      addRess
+      addRess,
+      Address
     });
   },
   onShow() {
@@ -150,8 +152,12 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     g: $setup.addRess
   }, $setup.addRess ? {
     h: common_vendor.o((...args) => $setup.getAdd && $setup.getAdd(...args))
-  } : {}, {
-    i: common_vendor.f(_ctx.goods, (item, index, i0) => {
+  } : {
+    i: common_vendor.t($setup.Address.userName),
+    j: common_vendor.t(`${$setup.Address.provinceName}${$setup.Address.cityName}${$setup.Address.countyName}${$setup.Address.detailInfo}`),
+    k: common_vendor.t($setup.Address.telNumber)
+  }, {
+    l: common_vendor.f(_ctx.goods, (item, index, i0) => {
       return {
         a: common_vendor.o(($event) => $setup.checkChange(index)),
         b: "5712e07a-3-" + i0,
@@ -172,14 +178,14 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
         m: index
       };
     }),
-    j: common_vendor.o($setup.change),
-    k: common_vendor.o(($event) => $setup.flag = $event),
-    l: common_vendor.p({
+    m: common_vendor.o($setup.change),
+    n: common_vendor.o(($event) => $setup.flag = $event),
+    o: common_vendor.p({
       modelValue: $setup.flag
     }),
-    m: common_vendor.t($setup.selectPrice.a),
-    n: common_vendor.t($setup.selectPrice.b),
-    o: common_vendor.p({
+    p: common_vendor.t($setup.selectPrice.a),
+    q: common_vendor.t($setup.selectPrice.b),
+    r: common_vendor.p({
       type: "error"
     })
   });

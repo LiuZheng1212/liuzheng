@@ -4,18 +4,5 @@
     "setting": {
         "compileHotReLoad": true
     },
-    "libVersion": "2.16.1",
-    "condition": {
-        "miniprogram": {
-            "list": [
-                {
-                    "name": "",
-                    "pathName": "pages/car/car",
-                    "query": "",
-                    "launchMode": "default",
-                    "scene": null
-                }
-            ]
-        }
-    }
+    "libVersion": "2.9.5"
 }

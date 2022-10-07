@@ -16,6 +16,17 @@
 			<view class="add" @click="getAdd" v-if="addRess">
 				获取收货地址
 			</view>
+			<view class="address" v-else>
+				<view class="add1">
+					收货人：{{Address.userName}}
+				</view>
+				<view class="add2">
+					收货地址：{{`${Address.provinceName}${Address.cityName}${Address.countyName}${Address.detailInfo}`}}
+				</view>
+				<view class="add3">
+					收货人电话：{{Address.telNumber}}
+				</view>
+			</view>
 		</view>
 		<view class="title">
 			购物车
@@ -61,9 +72,9 @@ import { reactive, toRefs,ref ,computed} from "vue"
 			const data = reactive({
 				goods: [],
 				ind:0,
-				obj:{
-				}
+				
 			})
+			const Address=ref({})
 			const flag=ref(false)
 			const show=ref(false)
 			const addRess=ref(true)
@@ -130,7 +141,8 @@ import { reactive, toRefs,ref ,computed} from "vue"
 			const getAdd=()=>{
 				uni.chooseAddress({
 					success: (res) => {
-						data.obj=res
+						Address.value=res
+						console.log(Address.value);
 						addRess.value=false
 					}
 				})
@@ -149,7 +161,8 @@ import { reactive, toRefs,ref ,computed} from "vue"
 				checkChange,
 				selectPrice,
 				getAdd,
-				addRess
+				addRess,
+				Address
 			}
 		},
 		onShow() {
